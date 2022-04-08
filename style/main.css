@@ -1,0 +1,104 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+/*elmentos base*/
+body{
+    background-color: var(--preta);
+    font-family: 'Arial', 'Times New Roman', Times, serif;
+    color: azure;
+}
+
+
+header .container{    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 20px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 35px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 15px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme principal*/
+.filmeprincipal{
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url('/img/suits2.jpg');
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filmeprincipal .descricao{
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.filmeprincipal .titulo{
+    margin-top: 25px;
+    font-size: 45px;
+    font-family: 'Trebuchet MS';
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 20px 25px;    
+    margin-right: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+ .container{
+     margin-left: 30px;
+     margin-right: 5px;
+ }
+
+ .filmeprincipal .container{
+     width: 500px;
+ }
+
+ .boxfilme{
+     height: 100%;
+     width: 100%;
+     display: block;
+ }
+ 
+ .carroselfilmes{
+     margin-top: 7px;
+ }
